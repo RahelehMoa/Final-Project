@@ -1,0 +1,11 @@
+* {
+    /* direction: rtl; */
+    /* font-family: Vazirmatn; */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.bodybricks{
+background-color: rgb(205, 205, 205);
+}
+
