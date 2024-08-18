@@ -13,3 +13,12 @@ background-color: rgb(205, 205, 205);
      width:65%
 }
 
+.indexbricks{
+    z-index:5;
+    width:320px;
+}
+
+.underlinebricks{
+    text-decoration: none;
+
+}
