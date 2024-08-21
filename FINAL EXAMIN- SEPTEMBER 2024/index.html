@@ -13,8 +13,7 @@
   html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
   .w3-bar-block .w3-bar-item {padding: 16px}
   </style>
-
-  <link rel="stylesheet" href="Style/style.css">
+ <link rel="stylesheet" href="Style/style.css">
 </head>
 <body class="bodybricks">
     <!-- Div that is "main div or whole div" for layout -->
@@ -22,10 +21,36 @@
 <div class="mainbricks">
   <h1>Gmail</h1>
 <section class="text-dark container"> <!-- Side vertical Navigation -->
-  
+  <!-- Side vertical Navigation -->
   <nav id="mySidebar">
-  <a href="https://www.google.com/"><img src="image/gmail.JPG"  class="picNavbricks"></a>
-
+ 
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
+    <a href="https://www.google.com/"><img src="image/gmail.JPG"  class="picNavbricks"></a>`
+    <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
+    class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">New Message <i class="w3-padding fa fa-pencil"></i></a>
+    <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Inbox (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <div id="Demo1" class="w3-hide w3-animate-left">
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
+        <div class="w3-container">
+          <img class="w3-round w3-margin-right" src="image/image104.JPG" style="width:15%;"><span class="w3-opacity w3-large">Borge Refsnes</span>
+          <h6>Subject: Interview</h6>
+          <p>Thank you for your interest in the JMA Project Manager position....</p>
+        </div>
+      </a>
+       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Jane');w3_close();">
+        <div class="w3-container">
+          <img class="w3-round w3-margin-right" src="image/image105.JPG" style="width:15%;"><span class="w3-opacity w3-large">Jane Doe</span>
+          <p>Hello ,<br> I hope this email finds you well. To briefly introduce myself,...</p>
+        </div>
+      </a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('John');w3_close();">
+        <div class="w3-container">
+          <img class="w3-round w3-margin-right" src="image/image106.JPG" style="width:15%;"><span class="w3-opacity w3-large">John Doe</span>
+          <p>Grazie per il tuo messaggio.</p>
+        </div>
+      </a>
+    </div>
 
  <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-paper-plane w3-margin-right"></i>Sent</a></div>
  <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-hourglass-end w3-margin-right"></i>Drafts</a></div>
@@ -37,7 +62,7 @@
 <!-- <section> Slider </section> -->
 
 <!-- Page content -->
-<section class="w3-main text-dark" style="margin-left:320px;"> services
+<section class="w3-main text-dark" style="margin-left:320px;"> 
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
     <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
     
