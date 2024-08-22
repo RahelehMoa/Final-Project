@@ -15,10 +15,16 @@ background-color: rgb(205, 205, 205);
 
 .indexbricks{
     z-index:4;
-    width:200px;
+    width:320px;
 }
 
 .underlinebricks{
     text-decoration: none;
 
 }
+
+.navsidebar{
+    z-index:4;
+    width:320px;
+}
+
