@@ -20,11 +20,10 @@
      <!-- Layout -->
 <div class="mainbricks">
   <h1>Gmail</h1>
-<section class="text-dark container"> <!-- Side vertical Navigation -->
+<section class="text-dark"> <!-- Side vertical Navigation -->
   <!-- Side vertical Navigation -->
   <nav id="mySidebar">
- 
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
     <a href="https://www.google.com/"><img src="image/gmail.JPG"  class="picNavbricks"></a>`
     <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
     class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
@@ -33,20 +32,20 @@
     <div id="Demo1" class="w3-hide w3-animate-left">
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
         <div class="w3-container">
-          <img class="w3-round w3-margin-right" src="image/image104.JPG" style="width:15%;"><span class="w3-opacity w3-large">Borge Refsnes</span>
+          <img class="w3-round w3-margin-right" src="image/image104.JPG" style="width:15%;"><span class="w3-opacity w3-large">JMA Wireless</span>
           <h6>Subject: Interview</h6>
           <p>Thank you for your interest in the JMA Project Manager position....</p>
         </div>
       </a>
        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Jane');w3_close();">
         <div class="w3-container">
-          <img class="w3-round w3-margin-right" src="image/image105.JPG" style="width:15%;"><span class="w3-opacity w3-large">Jane Doe</span>
+          <img class="w3-round w3-margin-right" src="image/image105.JPG" style="width:15%;"><span class="w3-opacity w3-large">Air S</span>
           <p>Hello ,<br> I hope this email finds you well. To briefly introduce myself,...</p>
         </div>
       </a>
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('John');w3_close();">
         <div class="w3-container">
-          <img class="w3-round w3-margin-right" src="image/image106.JPG" style="width:15%;"><span class="w3-opacity w3-large">John Doe</span>
+          <img class="w3-round w3-margin-right" src="image/image106.JPG" style="width:15%;"><span class="w3-opacity w3-large">Matteo C</span>
           <p>Grazie per il tuo messaggio.</p>
         </div>
       </a>
@@ -55,12 +54,36 @@
  <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-paper-plane w3-margin-right"></i>Sent</a></div>
  <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-hourglass-end w3-margin-right"></i>Drafts</a></div>
  <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-trash w3-margin-right"></i>Trash</a></div>
-
+</div>
 </nav>
 </section>
 
-<!-- <section> Slider </section> -->
-
+<!-- <section> Slider/ send Message / Modal that pops up when you click on "New Message" -->
+<div id="id01" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-red">
+       <span onclick="document.getElementById('id01').style.display='none'"
+       class="w3-button w3-red w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
+      <h2>Send Mail</h2>
+    </div>
+    <div class="w3-panel">
+      <label>To</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <label>From</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What's on your mind?">
+      <div class="w3-section">
+        <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
+        <a class="w3-button w3-light-grey w3-right" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a> 
+      </div>    
+    </div>
+  </div>
+</div>
+<!-- </section>  -->
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
 <!-- Page content -->
 <section class="w3-main text-dark" style="margin-left:320px;"> 
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
@@ -79,9 +102,7 @@
         Thank you for your interest in the JMA Project Manager position. We were clearly impressed with your background and competence.  We had a number of excellent candidates, including yourself, and it was a difficult decision. 
          
         In the end, we decided to move forward with another candidate.  We will keep you in mind for future openings as they develop.</p>
-        <p class="text-primary">Best Regards, <br> The JMA Recruiting Team.
-        
-        
+        <p class="text-primary">Best Regards, <br> The JMA Recruiting Team.   
     </div>
     
     <div id="Jane" class="w3-container person">
@@ -130,17 +151,14 @@
       <p class="text-primary">A dopo, <br> Matteo </p>
     </div>    
 </section>
-<section>  coustomers </section>
-<section> Footer </section>
-
-
 </div>
+
 <!--------------------------------- JAVA Script --------------------------------------------->
 <script>
   var openTab = document.getElementById("firstTab");
   openTab.click();
 </script>
 <!------------------------------------- link Java Script ------------------------------------->
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
