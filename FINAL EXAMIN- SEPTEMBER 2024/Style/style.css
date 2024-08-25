@@ -33,5 +33,9 @@ background-color: rgb(205, 205, 205);
 } */
 /* bg-light text-dark */
 
-.collapse{ display:block
+/* .collapse{ display:block
+} */
+
+.contentimagebricks{
+    width:15%
 }
