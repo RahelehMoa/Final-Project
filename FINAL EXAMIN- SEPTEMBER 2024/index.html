@@ -28,8 +28,8 @@
     <a href="https://www.google.com/"><img src="image/gmail.JPG"  class="picNavbricks"></a>`
     <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
     class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button greycolorbricks w3-button w3-left-align" onclick="document.getElementById('id01').style.display='block'">New Message <i class="w3-padding fa fa-pencil"></i></a>
-    <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Inbox (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button greycolorbricks w3-button w3-left-align" onclick="document.getElementById('id01').style.display='block'">New Message <i class="p-3 fa fa-pencil"></i></a>
+    <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox mr-3"></i>Inbox (3)<i class="fa fa-caret-down ml-3"></i></a>
     <div id="Demo1" class="w3-hide w3-animate-left">
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
         <div class="w3-container">
@@ -51,17 +51,18 @@
         </div>
       </a>
     </div>
-
+ 
  <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-paper-plane mr-3"></i>Sent</a></div>
  <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-hourglass-end mr-3"></i>Drafts</a></div>
  <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-trash mr-3"></i>Trash</a></div>
+
 </nav>
 </section>
 <!-- ----------------------------------------------------------------------------------------------------------------- -->
 <!-- <section> Slider/ send Message / Modal that pops up when you click on "New Message" -->
 <div id="id01" class="w3-modal" style="z-index:4">
   <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-padding bg-success">
+    <div class="w3-container p-3 bg-success">
        <span onclick="document.getElementById('id01').style.display='none'"
        class="w3-button bg-secondary w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
       <h2>Send Mail</h2>
@@ -73,7 +74,7 @@
       <input class="w3-input w3-border mb-3" type="text">
       <label>Subject</label>
       <input class="w3-input w3-border mb-3" type="text">
-      <input class="w3-input w3-border mb-3" style="height:150px" placeholder="What's on your mind?">
+      <input class="w3-input w3-border mb-3" style="height:150px" placeholder="What's on your mind? please write here">
       <div class="w3-section">
         <a class="w3-button bg-success" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
         <a class="w3-button w3-light-grey w3-right" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a> 
@@ -86,8 +87,8 @@
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
 <!-- Page content -->
 <section class="w3-main text-dark" style="margin-left:320px;"> 
-    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge ml-3 w3-margin-top" onclick="w3_open()"></i>
-    <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top mr-3" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge ml-3 mt-3" onclick="w3_open()"></i>
+    <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right mt-3 mr-3" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
     
     <div id="Borge" class="w3-container person">
       <br>
