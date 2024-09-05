@@ -24,27 +24,27 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
   <!-- Side vertical Navigation -->
   <nav id="mySidebar">
-  <div class="w3-sidebar w3-bar-block w3-collapse bg-light text-dark w3-animate-left w3-card navsidebar" id="mySidebar">
-    <a href="https://www.google.com/"><img src="image/gmail.JPG"  class="picNavbricks"></a>`
+  <div class="sidebarbricks w3-bar-block w3-collapse bg-light text-dark w3-animate-left w3-card navsidebar" id="mySidebar">
+    <a href="https://www.google.com/"><img src="image/gmail.JPG"  class="picNavbricks"></a>` 
     <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
-    class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button greycolorbricks w3-button w3-left-align" onclick="document.getElementById('id01').style.display='block'">New Message <i class="p-3 fa fa-pencil"></i></a>
-    <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox mr-3"></i>Inbox (3)<i class="fa fa-caret-down ml-3"></i></a>
+    class="bar-itembricks underlinebricks w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
+    <a href="javascript:void(0)" class=" backgroundbricks bar-itembricks underlinebricks greycolorbricks inboxbricks" onclick="document.getElementById('id01').style.display='block'">New Message <i class="p-3 fa fa-pencil"></i></a>
+    <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="bar-itembricks inboxbricks underlinebricks"><i class="fa fa-inbox mr-3"></i>Inbox (3)<i class="fa fa-caret-down ml-3"></i></a>
     <div id="Demo1" class="w3-hide w3-animate-left">
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
+      <a href="javascript:void(0)" class="bar-itembricks underlinebricks w3-border-bottom test w3-hover-light-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
         <div class="w3-container">
           <img class="rounded-circle mr-3 mb-3" src="image/image104.JPG" style="width:15%;"><span class="w3-opacity w3-large">JMA Wireless</span>
           <p class="h6">Subject: Interview</p>
           <p>Thank you for your interest in the JMA Project Manager position....</p>
         </div>
       </a>
-       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Jane');w3_close();">
+       <a href="javascript:void(0)" class="bar-itembricks underlinebricks w3-border-bottom test w3-hover-light-grey" onclick="openMail('Jane');w3_close();">
         <div class="w3-container">
           <img class="rounded-circle mr-3 mb-3" src="image/image105.JPG" style="width:15%;"><span class="w3-opacity w3-large">Air S</span>
           <p>Hello ,<br> I hope this email finds you well. To briefly introduce myself,...</p>
         </div>
       </a>
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('John');w3_close();">
+      <a href="javascript:void(0)" class=" bar-itembricks underlinebricks w3-border-bottom test w3-hover-light-grey" onclick="openMail('John');w3_close();">
         <div class="w3-container">
           <img class="rounded-circle mr-3 mb-3" src="image/image106.JPG" style="width:15%;"><span class="w3-opacity w3-large">Matteo C</span>
           <p>Grazie per il tuo messaggio.</p>
@@ -52,9 +52,9 @@
       </a>
     </div>
  
- <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-paper-plane mr-3"></i>Sent</a></div>
- <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-hourglass-end mr-3"></i>Drafts</a></div>
- <div><a href="#" class="w3-bar-item w3-button underlinebricks"><i class="fa fa-trash mr-3"></i>Trash</a></div>
+ <div><a href="#" class="bar-itembricks underlinebricks"><i class="fa fa-paper-plane mr-3"></i>Sent</a></div>
+ <div><a href="#" class="bar-itembricks underlinebricks"><i class="fa fa-hourglass-end mr-3"></i>Drafts</a></div>
+ <div><a href="#" class="bar-itembricks underlinebricks"><i class="fa fa-trash mr-3"></i>Trash</a></div>
 
 </nav>
 </section>
@@ -64,20 +64,27 @@
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container p-3 bg-success">
        <span onclick="document.getElementById('id01').style.display='none'"
-       class="w3-button bg-secondary w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
+       class="w3-button bg-secondary rightbricks w3-xxlarge"><i class="fa fa-remove"></i></span>
       <p class="h2 text-secondary">Send Mail</p>
     </div>
     <div class="w3-panel">
       <label>To</label>
-      <input class="w3-input w3-border mb-3" type="text">
+      <input class="inputbricks w3-border mb-3" type="text">
       <label>From</label>
-      <input class="w3-input w3-border mb-3" type="text">
-      <label>Subject</label>
-      <input class="w3-input w3-border mb-3" type="text">
-      <input class="w3-input w3-border mb-3" style="height:150px" placeholder="What's on your mind? please write here">
+      <input class="inputbricks w3-border mb-3" type="text">
+      
+
+      
+      <label for="comment">Comments:</label>
+      <textarea class="form-control inputbricks w3-border mb-3" rows="5" id="comment" name="text" style="height:150px" placeholder="What's on your mind? please write here"></textarea>
+      
+     
+      
+      
+      
       <div class="w3-section">
-        <a class="w3-button bg-success" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
-        <a class="w3-button w3-light-grey w3-right" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a> 
+        <button type="button" class="btn btn-success" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></button>
+        <button type="button" class="btn btn-success rightbricks" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></button> 
       </div>    
     </div>
   </div>
@@ -86,9 +93,9 @@
 <!-- Overlay effect when opening the side navigation on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
 <!-- Page content -->
-<section class="w3-main text-dark" style="margin-left:320px;"> 
+<section class=" text-dark" style="margin-left:320px;"> 
     <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge ml-3 mt-3" onclick="w3_open()"></i>
-    <a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right mt-3 mr-3" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+    <a href="javascript:void(0)" class="w3-hide-large bg-success w3-button rightbricks mt-3 mr-3" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
     
     <div id="Borge" class="w3-container person">
       <br>
