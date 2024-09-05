@@ -60,6 +60,7 @@
 </section>
 <!-- ----------------------------------------------------------------------------------------------------------------- -->
 <!-- <section> Slider/ send Message / Modal that pops up when you click on "New Message" -->
+<!-- Modal part in Bootstrap 5 -->
 <div id="id01" class="w3-modal" style="z-index:4">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container p-3 bg-success">
@@ -67,22 +68,28 @@
        class="w3-button bg-secondary rightbricks w3-xxlarge"><i class="fa fa-remove"></i></span>
       <p class="h2 text-secondary">Send Mail</p>
     </div>
-    <div class="w3-panel">
-      <label>To</label>
-      <input class="inputbricks w3-border mb-3" type="text">
-      <label>From</label>
-      <input class="inputbricks w3-border mb-3" type="text">
-      
 
-      
+       <!-- To and From Lables and input in Bootstrap 5 -->
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3 ml-3 mr-3">
+          <label for="email">To</label>
+          <input type="email" class="form-control mb-3" id="email" placeholder="Enter email To sb/someplace" name="email">
+        </div>
+        <div class="mb-3 ml-3 mr-3">
+          <label for="pwd">From</label>
+          <input type="password" class="form-control mb-3" id="pwd" placeholder="Enter your email" name="pswd">
+        </div>
+      </form>
+
+      <!-- form and lable and textarea in Bootstrap 5  -->
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3 ml-3 mr-3">
       <label for="comment">Comments:</label>
       <textarea class="form-control inputbricks w3-border mb-3" rows="5" id="comment" name="text" style="height:150px" placeholder="What's on your mind? please write here"></textarea>
-      
-     
-      
-      
-      
-      <div class="w3-section">
+      </div>
+      </form>
+      <!-- send and cancel are "Button Bootstrap 5"-->
+      <div class="mr-3 ml-3 mb-5">
         <button type="button" class="btn btn-success" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></button>
         <button type="button" class="btn btn-success rightbricks" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></button> 
       </div>    
