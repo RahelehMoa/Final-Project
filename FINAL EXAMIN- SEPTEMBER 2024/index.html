@@ -22,8 +22,8 @@
 <!-- <p class="h1">Gmail Project</p> -->
 <section class="text-dark"> <!-- Side vertical Navigation -->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-  <!-- Side vertical Navigation -->
-  <nav id="mySidebar">
+  <!-------------- Side vertical Navigation / col-md-3--------------------------- -->
+  <nav class="col-md-3"   id="mySidebar"> 
   <div class="sidebarbricks w3-bar-block w3-collapse bg-light text-dark w3-animate-left w3-card navsidebar" id="mySidebar">
     <a href="https://www.google.com/"><img src="image/gmail.JPG"  class="picNavbricks"></a>` 
     <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
@@ -61,15 +61,15 @@
 <!-- ----------------------------------------------------------------------------------------------------------------- -->
 <!-- <section> Slider/ send Message / Modal that pops up when you click on "New Message" -->
 <!-- Modal part in Bootstrap 5 -->
-<div id="id01" class="w3-modal" style="z-index:4">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container p-3 bg-success">
+<div id="id01" class="modalbricks modalindexbricks">
+  <div class="modalbricks2 w3-animate-zoom">
+    <div class="w3-container p-2 bg-success">
        <span onclick="document.getElementById('id01').style.display='none'"
-       class="w3-button bg-secondary rightbricks w3-xxlarge"><i class="fa fa-remove"></i></span>
+       class="btn btn-light rightbricks sizebarmodalbricks"><i class="fa fa-remove"></i></span>
       <p class="h2 text-secondary">Send Mail</p>
     </div>
-
-       <!-- To and From Lables and input in Bootstrap 5 -->
+ 
+       <!-- To and From Lables and input in Bootstrap 5 / Type is Email or text -->
       <form action="/action_page.php">
         <div class="mb-3 mt-3 ml-3 mr-3">
           <label for="email">To</label>
@@ -78,6 +78,10 @@
         <div class="mb-3 ml-3 mr-3">
           <label for="email">From</label>
           <input type="email" class="form-control mb-3" id="email" placeholder="Enter your email" name="email">
+        </div>
+        <div class="mb-3 ml-3 mr-3">
+          <label for="text">Subject</label>
+          <input type="text" class="form-control mb-3" id="text" placeholder="Subject / Interview" name="text">
         </div>
       </form>
 
@@ -99,10 +103,10 @@
 <!-- </section>  -->
 <!-- Overlay effect when opening the side navigation on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
-<!-- Page content -->
-<section class=" text-dark" style="margin-left:320px;"> 
-    <i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge ml-3 mt-3" onclick="w3_open()"></i>
-    <a href="javascript:void(0)" class="w3-hide-large bg-success w3-button rightbricks mt-3 mr-3" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+<!----------------------------- Page content/col-md-9 ------------------------------------->
+<section class=" text-dark col-md-9 contentmarginbricks"> 
+    <i class="fa fa-bars btn btn-light w3-white w3-hide-large w3-xlarge ml-3 mt-3" onclick="w3_open()"></i>
+    <a href="javascript:void(0)" class="w3-hide-large bg-success btn btn-success rightbricks mt-3 mr-3" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
     
     <div id="Borge" class="w3-container person">
       <br>
