@@ -15,11 +15,11 @@ function myFunc(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show"; 
-    x.previousElementSibling.className += " w3-red";
+    x.previousElementSibling.className += " bg-success text-light";
   } else { 
-    x.className = x.className.replace(" w3-show", "");
+    x.className = x.className.replace(" w3-show", "");  
     x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-red", "");
+    x.previousElementSibling.className.replace(" bg-success text-light", "");
   }
 }
 
@@ -32,9 +32,9 @@ function openMail(personName) {
   }
   x = document.getElementsByClassName("test");
   for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" w3-light-grey", "");
+    x[i].className = x[i].className.replace(" bg-secondary text-light", "");
   }
   document.getElementById(personName).style.display = "block";
-  event.currentTarget.className += " w3-light-grey";
+  event.currentTarget.className += " bg-secondary text-light";
 }
 
